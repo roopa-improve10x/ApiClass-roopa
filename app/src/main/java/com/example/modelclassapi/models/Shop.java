@@ -32,6 +32,8 @@ public class Shop {
     @SerializedName("checkout_token")
     private String checkoutToken;
 
+    @SerializedName("client_details")
+    private ClientDetails clientDetails;
 
     public Integer getId() {
         return id;
@@ -112,8 +114,6 @@ public class Shop {
     public void setCheckoutToken(String checkoutToken) {
         this.checkoutToken = checkoutToken;
     }
-
-    private ClientDetails clientDetails;
 
     public ClientDetails getClientDetails() {
         return clientDetails;

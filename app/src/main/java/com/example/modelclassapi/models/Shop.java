@@ -35,6 +35,27 @@ public class Shop {
     @SerializedName("client_details")
     private ClientDetails clientDetails;
 
+    @SerializedName("closed_at")
+    private String closedAt;
+
+    @SerializedName("confirmed")
+    private Boolean confirmed;
+
+    @SerializedName("created_at")
+    private String createdAt;
+
+    @SerializedName("currency")
+    private String currency;
+
+    @SerializedName("current_subtotal_price")
+    private String currentSubtotalPrice;
+    @SerializedName("current_subtotal_price_set")
+    private Money money;
+
+    @SerializedName("current_total_discounts")
+    private String currentTotalDiscounts;
+
+
     public Integer getId() {
         return id;
     }
@@ -121,5 +142,61 @@ public class Shop {
 
     public void setClientDetails(ClientDetails clientDetails) {
         this.clientDetails = clientDetails;
+    }
+
+    public String getClosedAt() {
+        return closedAt;
+    }
+
+    public void setClosedAt(String closedAt) {
+        this.closedAt = closedAt;
+    }
+
+    public Boolean getConfirmed() {
+        return confirmed;
+    }
+
+    public void setConfirmed(Boolean confirmed) {
+        this.confirmed = confirmed;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(String createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public String getCurrency() {
+        return currency;
+    }
+
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
+    public String getCurrentSubtotalPrice() {
+        return currentSubtotalPrice;
+    }
+
+    public void setCurrentSubtotalPrice(String currentSubtotalPrice) {
+        this.currentSubtotalPrice = currentSubtotalPrice;
+    }
+
+    public Money getMoney() {
+        return money;
+    }
+
+    public void setMoney(Money money) {
+        this.money = money;
+    }
+
+    public String getCurrentTotalDiscounts() {
+        return currentTotalDiscounts;
+    }
+
+    public void setCurrentTotalDiscounts(String currentTotalDiscounts) {
+        this.currentTotalDiscounts = currentTotalDiscounts;
     }
 }

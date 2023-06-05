@@ -115,5 +115,11 @@ public class Shop {
 
     private ClientDetails clientDetails;
 
+    public ClientDetails getClientDetails() {
+        return clientDetails;
+    }
 
+    public void setClientDetails(ClientDetails clientDetails) {
+        this.clientDetails = clientDetails;
+    }
 }

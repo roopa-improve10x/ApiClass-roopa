@@ -9,6 +9,8 @@ public class ClientDetails {
 
     @SerializedName("browser_height")
     private Integer browserHeight;
+    @SerializedName("browser_ip")
+    private String browserIp;
 
     @SerializedName("browser_width")
     private Integer browserWidth;
